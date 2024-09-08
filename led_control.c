@@ -28,16 +28,7 @@ ISR(TIMER3_COMPA_vect) {
 	slow_count += 5;
 }
 
-/* =======================================
- * ==== END OF "DO NOT TOUCH" SECTION ====
- * =======================================
- */
 
-
-/* *********************************************
- * **** BEGINNING OF "STUDENT CODE" SECTION ****
- * *********************************************
- */
 
 void led_state(uint8_t LED, uint8_t state) {
 	DDRL = 0xff;  
@@ -226,16 +217,7 @@ void light_show() {
 }
 
 
-/* ***************************************************
- * **** END OF FIRST "STUDENT CODE" SECTION **********
- * ***************************************************
- */
 
-
-/* =============================================
- * ==== BEGINNING OF "DO NOT TOUCH" SECTION ====
- * =============================================
- */
 
 int main() {
     /* Turn off global interrupts while setting up timers. */
@@ -265,18 +247,9 @@ int main() {
 	/* Turn on global interrupts */
 	sei();
 
-/* =======================================
- * ==== END OF "DO NOT TOUCH" SECTION ====
- * =======================================
- */
 
 
-/* *********************************************
- * **** BEGINNING OF "STUDENT CODE" SECTION ****
- * *********************************************
- */
-
-/* This code could be used to test your work for part A.
+/* Testing part 1
 
 	led_state(0, 1);
 	_delay_ms(1000);
@@ -294,13 +267,11 @@ int main() {
 	_delay_ms(1000); */
 
 
-/* This code could be used to test your work for part B.
- */
+/* Testing part 2
 	//SOS();
 
 
-/* This code could be used to test your work for part C. */
-
+/* Testing part 3
 	//glow(2, .01);
 	//glow(3, .1);
 	//glow(2, .5);
@@ -308,19 +279,17 @@ int main() {
 
 
 
-/* This code could be used to test your work for part D. */
+/* Testing part 4
 	
 	pulse_glow(2);
 
 
 
-/* This code could be used to test your work for the bonus part. */
+/* Testing part 5
 
 	//light_show();
 
 
-/* ****************************************************
- * **** END OF SECOND "STUDENT CODE" SECTION **********
- * ****************************************************
+/*
  */
 }
